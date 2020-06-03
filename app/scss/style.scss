@@ -1880,6 +1880,199 @@ button.icon-unsorted{
 }
 
 //end settings
+//start profile
+.profile__inner{
+    display: flex;
+    margin-bottom: 30px;
+}
+.profile__aside{
+    margin-right: 30px;
+    max-width: 270px;
+    width: 100%;
+    & .footer__social-link{
+        margin-bottom: 28px;
+    }
+}
+.profile__content{
+    width: 100%;
+}
+.profile-status{
+    color: #707070;
+    border: 1px solid #d6d6d6;
+    font-size: 13px;
+    padding: 6px 9px 5px 30px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 13px;
+        left: 11px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        
+    }
+}
+.profile-on{
+    &::before{
+       background-color: $green; 
+    }
+    
+}
+.profile-off{
+    &::before{
+        background-color: $red; 
+    }
+}
+.profile__aside-btn{
+    margin-bottom: 13px;
+    text-align: center;
+}
+.profile__aside-message{
+    display: block;
+    width: 100%;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    background-color: $text;
+    margin-bottom: 17px;
+    color: #ffffff;
+    @include f500;
+    padding: 18px 10px;
+    position: relative;
+    &::before{
+        position: absolute;
+        font-family: 'icomoon';
+        content: "\f003";
+        left: 50px;
+        top: 17px;
+    }
+}
+.profile__aside-following{
+    display: block;
+    width: 100%; 
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    background-color: $green;
+    margin-bottom: 17px;
+    color: #ffffff;
+    @include f700;
+    padding: 18px 10px;
+    
+}
+.profile__banner{
+    padding: 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+.profile__banner-images{
+    background-image: url(../images/content/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 332px;
+    
+}
+.profile__items{
+    display: flex;
+    border: 1px solid #d6d6d6;
+}
+.profile__item{
+    width: 25%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 5px 17px;
+    & + .profile__item{
+        border-left: 1px solid #d6d6d6;
+    }
+}
+.profile__item-title{
+    font-size: 14px;
+    color: $bg;
+    @include f500;
+}
+.profile__item-content{
+    font-size: 14px;
+    color: #707070;
+    &.profile__item-sales{
+        color: $bg;
+    }
+    span{
+        color: $bg;
+    }
+}
+
+.perconal-box{
+    background-color: #fff;
+    padding: 34px 40px 25px;
+    border: 1px solid #d6d6d6;
+}
+.perconal-box__title{
+    margin-bottom: 25px;
+    @include f700;
+    color: $bg;
+    font-size: 20px;
+}
+.perconal-box__text{
+    margin-bottom: 20px;
+    p{
+        font-size: 15px;
+        color: #707070; 
+    }
+}
+.perconal-box__item-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.perconal-box__item-name{
+    @include f500;
+    font-size: 16px;
+    color: $bg;
+    font-style: italic;
+}
+.perconal-box__item-number{
+    @include f700;
+    font-size: 16px;
+    color: $bg;
+
+}
+.perconal-box__item-line{
+    background-color: #f4f4ff;
+    height: 15px;
+    border-radius: 3px;
+    margin-bottom: 23px;
+    span{
+        display: block;
+        height: 15px;
+        border-radius: 3px;
+        background-color: $green;
+        background-image: url(../images/progressbar.jpg);
+        background-repeat: repeat;
+    }
+}
+.product-one__tabs.settings__tabs{
+    .tabs span  {
+        font-family: 'Roboto', sans-serif !important;
+        font-weight: 500;
+        color: #707070;
+        position: relative;
+        &.active::before{
+            color: $green;
+        }
+        &::before{             
+            font-family: 'icomoon';
+            position: absolute;
+            color: #d0d0d0;
+            font-size: 14px;    
+            left: 27px;
+            top: 15px;
+        }
+    }  
+} 
+//end profile
+
+
+
+
 
 
 @import '_media';
